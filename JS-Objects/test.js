@@ -169,3 +169,34 @@ var newMeals = Object.assign( {}, meals, {breakfast: ['oatmeal', 'banana'] })
   // lunch: "turkey sandwich",
   // dinner: "steak and potatoes"
   // };
+  
+  const artistsAndSongs = {
+  'Prince': ["Purple Rain", "When Doves Cry"],
+  'The Beatles': ["Revolution", "Norwegian Wood"],
+  'Joni Mitchell': ["A Case of You", "Sunny Sunday"],
+  'Justin Bieber': ["Baby"]
+}
+ 
+artistsAndSongs['Daft Punk'] = ["Harder, Better, Faster, Stronger"]
+ 
+delete artistsAndSongs["Justin Bieber"]
+
+artistsAndSongs['Daft Punk'].push("Around the World")
+
+console.log(artistsAndSongs)
+
+
+const oneTwoThree = [1, 2, 3]
+const sevenEightNine = [7, 8, 9]
+
+var fourFiveSix = [4,5, 6, ...oneTwoThree, ...sevenEightNine]
+
+console.log(fourFiveSix)
+
+const letters = ["alpha", "gamma", "delta"]
+
+// [letters.slice(0, 1), 'beta', ...letters.slice(1)]
+
+letters.splice(1, 0, 'beta')
+
+console.log(letters)
